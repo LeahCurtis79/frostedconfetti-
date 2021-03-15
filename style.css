@@ -8,8 +8,9 @@
 nav{ 
 
     width: 40%;
-    height: 80px;
-    background-color:royalblue
+    height: 50px;
+    background-color: blueviolet;
+
 
     /* unvisited link */
     a: link 

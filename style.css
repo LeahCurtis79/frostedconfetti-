@@ -6,12 +6,27 @@
 }
 
 nav{ 
+
     width: 40%;
     height: 80px;
     background-color:royalblue
-    
-}
 
+    /* unvisited link */
+    a: link 
+    color: darkblue;  
+    }
+    /* visited link */
+    a:visited {
+        color:darkorange; 
+    }
+    /*mouse over link */
+    a:hover {
+        color:greenyellow; 
+    }
+    /* selected link */
+    a:active {
+        color:orangered;
+    }
 body {
     background-color: turquoise;
 }

@@ -1,53 +1,123 @@
-
-<html>
-
-
-
-<p>Leah Curtis</p>
-<p>March 15, 2021</p> 
-<p>index.html</p>
-<p>This website describes a cupcake business who's profits go directly to a women and children's shelter.</p> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <!--this liks each page to the style page-->
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: turquoise;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: palevioletred;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: tomato;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: turquoise;
+  padding: 10px;
+  text-align: center;
+}
+</style>
 </head>
-    <title>Frosted Confetti</title>
-
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About Us.html">About Us</a></li>
-            <li><a href="Photos.html">Photos</a></li>
-            <li><a href="Contact.html">Contact</a></li>
+<div class="header">
+  <h1>Frosted Confetti</h1>
+  <p>Where the flavors are always changing!</p>
+</div>
 
-        </ul>
-    </nav>
-    <!--These are the links to other pages within oue website-->
+<div class="topnav">
+  <a href="#">About Us</a>
+  <a href="#">Photos</a>
+  <a href="#">Contact</a>
+</div>
 
-    <h1>Welcome to Frosted Confetti</h1> <!--This is the opening banner of the webpage-->
-    <img src="Cupcake1.jpg"> 
-    <img src="Cupcake2.jpg" width="225" height="225">
+<div class="row">
+  <div class="column side">
+    <p><img src="Cupcake1.jpg" alt=""></p>
+  </div>
+  
+  <div class="column middle">
+    <h2>Cupcakes are our life!</h2>
+    <p>At Frosted Confetti we bring you a new menu each week that is full of unique cupcake flavors.</p>
+    <p>Each week we bring you a new variety of unique flavors that are bound to keep you coming back for more!</p>
+  </div>
+  
+  <div class="column side">
+    <p><img src="Cupcake2.jpg" width= "225" height="225"
+</div>
 
-
-    <p>All monies are made from donations and go directly to a women and children's shelter.</p>
-    <p>At Frosted Confetti we bring you a new menu each week that is full of unique cupcake flavors. </p> <!--This explains what the website is about-->
-    <p>Each week we will have four new flavors along with two flavors that are permanent.</p>
-    <p>Online Ordering is available for curbside pickup.</p>
+<div class="footer">
+  <p>&copy;All Rights Reserved</p>
+</div>
+  
 </body>
-    
+</html>
 
-    <section>
-     <footer>
-    <a href="orderform.index.html"> <b><i>Click here to Order.</i></b>
-        <!--This is where the user will click to go to order form-->
 
-        <p>&copy; All Rights Reserved.
-    </footer>
-   </section>
 
-   </html>
-    
+
+
+
+
